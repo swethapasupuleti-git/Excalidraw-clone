@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#main-body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.upper-body{
+    position: absolute;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    padding: 5px;
+    border-radius: 5px;
+}
+button:hover{
+    background-color:rgb(244, 244, 244) ;
+    cursor: pointer;
+   
+}
+.tools{
+    border: 1px solid rgb(110, 103, 103);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(204, 200, 200);
+    padding: 5px;
+}
+.On{
+   background-color: blue; 
+   padding:5px ;
+}
+
+.user{
+    margin-right: 10px;
+}
+.user>button{
+    background-color: blue;
+    border-radius: 5px;
+}
+.user>button>i{
+    padding: 5px;
+}
+.zoom-btns, .undo-redo, .library>button, .menu>button, .help-btn>button{
+    border: none;
+    border: 1px solid rgb(231, 215, 215);
+    border-radius: 5px;
+    padding: 5px;
+}
+.lower-btns{
+    position: sticky;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+.undo-redo{
+    margin-left: 10px;
+}
+.leftpart{
+    display: flex;
+}
+.help-btn{
+    padding-right: 10px;
+}
+.help-btn>button>i{
+    padding: 5px;
+}
+@media screen and (max-width: 768px) {
+    .upper-body{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tools{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .library, .user{
+        display: none;
+    }
+}
